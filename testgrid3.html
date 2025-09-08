@@ -10,13 +10,15 @@
             display: grid;
             background-color: beige;
             height: 90vh;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 300px 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 2fr 3fr 200px 200px;
             grid-template-areas:
-                "gdt1 gdt2 gdt2 gdt3"
-                "gdt1 gdt4 gdt5 gdt6"
-                "gdt1 gdt7 gdt8 gdt6";
-            gap: 6px;
+                "gdt1 gdt1 gdt1"
+                "gdt2 gdt2 gdt2"
+                "gdt3 gdt4 gdt4"
+                "gdt3 gdt5 gdt5"
+                "gdt3 gdt6 gdt7";
+                gap: 6px;
         }
 
         .gdt1 {
@@ -30,12 +32,12 @@
         }
 
         .gdt3 {
-            background-color: blueviolet;
+            background-color: lightblue;
             grid-area: gdt3;
         }
 
         .gdt4 {
-            background-color: lightblue;
+            background-color: pink;
             grid-area: gdt4;
         }
 
@@ -45,17 +47,13 @@
         }
 
         .gdt6 {
-            background-color: green;
+            background-color: blue;
             grid-area: gdt6;
         }
 
         .gdt7 {
-            background-color: pink;
+            background-color: greenyellow;
             grid-area: gdt7;
-        }
-        .gdt8 {
-            background-color: cyan;
-            grid-area: gdt8;
         }
     </style>
 </head>
@@ -69,7 +67,6 @@
         <div class="gdt5"></div>
         <div class="gdt6"></div>
         <div class="gdt7"></div>
-        <div class="gdt8"></div>
     </div>
 </body>
 
