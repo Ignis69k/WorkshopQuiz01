@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridtable {
+            display: grid;
+            background-color: beige;
+            height: 90vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 2fr 3fr 200px 200px;
+            grid-template-areas:
+                "gdt1 gdt2 gdt2"
+                "gdt3 gdt3 gdt3"
+                "gdt4 gdt5 gdt6"
+                "gdt4 gdt5 gdt7"
+                "gdt8 gdt8 gdt8";
+                gap: 6px;
+        }
+
+        .gdt1 {
+            background-color:  rgb(205, 255, 106);
+            grid-area: gdt1;
+        }
+
+        .gdt2 {
+            background-color: rgb(0, 9, 186);
+            grid-area: gdt2;
+        }
+
+        .gdt3 {
+            background-color: orange;
+            grid-area: gdt3;
+        }
+
+        .gdt4 {
+            background-color: lightblue;
+            grid-area: gdt4;
+        }
+
+        .gdt5 {
+            background-color: red;
+            grid-area: gdt5;
+        }
+
+        .gdt6 {
+            background-color: purple;
+            grid-area: gdt6;
+        }
+
+        .gdt7 {
+            background-color: rgb(0, 191, 191);
+            grid-area: gdt7;
+        }
+        .gdt8 {
+            background-color: plum;
+            grid-area: gdt8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridtable">
+        <div class="gdt1"></div>
+        <div class="gdt2"></div>
+        <div class="gdt3"></div>
+        <div class="gdt4"></div>
+        <div class="gdt5"></div>
+        <div class="gdt6"></div>
+        <div class="gdt7"></div>
+        <div class="gdt8"></div>
+    </div>
+</body>
+
+</html>
